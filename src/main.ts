@@ -1,5 +1,23 @@
 import './style.css';
+import Player from "./class/Player.ts";
+import PadController from "./class/PadController.ts";
+
+import Game from "./class/Game.ts";
+
+const player1 = new Player();
+const padcontroller : PadController = new PadController();
+player1.setupController(padcontroller);
+
+
+const game = new Game("gameArea", player1);
+
+
+
+
+/*
 const canvas: HTMLCanvasElement | null = document.getElementById("gameArea") as HTMLCanvasElement | null;
+
+
 
 if (canvas) {
   const ctx = canvas.getContext("2d");
@@ -161,3 +179,4 @@ if (canvas) {
 } else {
   console.error("L'élément canvas avec l'ID 'gameArea' n'a pas été trouvé.");
 }
+*/
