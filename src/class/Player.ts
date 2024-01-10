@@ -11,9 +11,6 @@ export default class Player extends Sprite {
         _color: string = 'orange',
         _velocity :number = 0
     ) {
-
-
-
     }
 
 

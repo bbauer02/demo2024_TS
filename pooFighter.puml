@@ -1,23 +1,28 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-interface Position {
-    x: number;
-    y: number;
-}
 
 class Sprite {
-    position: Position
-    width : number
-    height : number
-    scale : number
 
 }
 
-class fighter {
+class Player {
 
 }
 
+class Game {
+}
 
+class GameController {
+}
+
+class PadController {
+}
+
+Game o-- Player
+Player --> PadController
+
+Player --|> Sprite
+PadController --|>  GameController
 
 @enduml

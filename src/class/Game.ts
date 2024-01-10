@@ -7,7 +7,6 @@ export default class Game {
         this.ctx = this.canvas?.getContext("2d") || null;
         this.init();
         this.gameLoop();
-
     }
 
     private init() : void {
@@ -20,8 +19,8 @@ export default class Game {
         if(this.canvas) {
             this.canvas.width = window.innerWidth;
             this.canvas.height = window.innerHeight;
-            this.player1.width = this.canvas.width * 0.1;
-            this.player1.height = this.canvas.height * 0.1;
+            this.player1.width = this.canvas.width * 0.05;
+            this.player1.height = this.canvas.height * 0.2;
             this.player1.velocity = this.canvas.width * 0.01;
         }
 
